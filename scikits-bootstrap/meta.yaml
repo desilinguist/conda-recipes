@@ -1,0 +1,34 @@
+package:
+  name: scikits-bootstrap
+  version: 0.3.1
+
+source:
+  fn: scikits.bootstrap-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/scikits.bootstrap/scikits.bootstrap-0.3.1.tar.gz
+  md5: 5335adebc3f9599695c6d7c35414b45b
+
+build:
+  # entry_points:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - numpy
+    - scipy
+
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  # Python imports
+  imports:
+    - import scikits.bootstrap as boot
+
+  commands:
+
+about:
+  home: https://github.com/cgevans/scikits-bootstrap
+  license: Modified BSD License
