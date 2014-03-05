@@ -1,11 +1,11 @@
 package:
   name: patsy
-  version: 0.1.0
+  version: 0.2.1
 
 source:
-  fn: patsy-0.1.0.tar.gz
-  url: https://pypi.python.org/packages/source/p/patsy/patsy-0.1.0.tar.gz
-  md5: 3bac8ee49d6a9a208fca4292e5f9a9ab
+  fn: patsy-0.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/patsy/patsy-0.2.1.tar.gz
+  md5: ea36c846d62231e41df684a827a5fd58
 #  patches:
    # List any patch files here
    # - fix.patch

@@ -1,52 +1,45 @@
 package:
-  name: whoosh
-  version: 2.5.7
+  name: nwalign
+  version: 0.3.1
 
 source:
-  fn: Whoosh-2.5.7.tar.gz
-  url: https://pypi.python.org/packages/source/W/Whoosh/Whoosh-2.5.7.tar.gz
-  md5: 9d35a7498d5c7af8fe162f63719f4eeb
+  fn: nwalign-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/n/nwalign/nwalign-0.3.1.tar.gz
+  md5: 80b9f4ca5646a0103d87156a12b072bc
 #  patches:
    # List any patch files here
    # - fix.patch
 
-build:
+# build:
   # entry_points:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - whoosh = whoosh:main
+    # - nwalign = nwalign:main
     #
-    # Would create an entry point called whoosh that calls whoosh.main()
+    # Would create an entry point called dawg that calls nwalign.main()
 
 
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1
+  # number: 1
 
 requirements:
   build:
     - python
     - setuptools
+    - numpy
+    - cython
 
   run:
     - python
+    - setuptools
+    - numpy
 
 test:
   # Python imports
   imports:
-    - whoosh.query
-    - whoosh.automata
-    - whoosh.qparser
-    - whoosh.filedb
-    - whoosh.codec
-    - whoosh.lang.snowball
-    - whoosh.util
-    - whoosh.support
-    - whoosh.analysis
-    - whoosh.matching
-    - whoosh
-    - whoosh.lang
+    - nwalign
 
   # commands:
     # You can put test commands to be run here.  Use this to test that the
@@ -61,7 +54,7 @@ test:
     # - nose
 
 about:
-  home: http://bitbucket.org/mchaput/whoosh
+  home: http://bitbucket.org/brentp/biostuff/
   license: BSD License
 
 # See

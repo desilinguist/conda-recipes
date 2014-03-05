@@ -1,11 +1,11 @@
 package:
   name: gensim
-  version: 0.8.8
+  version: 0.8.9
 
 source:
-  fn: gensim-0.8.8.tar.gz [py2k]
-  url: https://pypi.python.org/packages/source/g/gensim/gensim-0.8.8.tar.gz [py2k]
-  md5: 39b47095185f05a01b83ebf1a6748953 [py2k]
+  fn: gensim-0.8.9.tar.gz [py2k]
+  url: https://pypi.python.org/packages/source/g/gensim/gensim-0.8.9.tar.gz [py2k]
+  md5: 8437e497aebfa365d8c26bbd600e2c1f [py2k]
 
 #  patches:
    # List any patch files here
