@@ -1,0 +1,62 @@
+package:
+  name: aspell-python
+  version: 1.12
+
+
+source:
+  # The source section specifies where the source code of the package is coming
+  # from, it may be coming from a source tarball like:
+  # or from git:
+  git_url: https://github.com/WojciechMula/aspell-python.git
+  git_tag: master
+
+  # Patches may optionally be applied to the source
+  patches:
+    - setup.2.patch    # [py2k]
+    - setup.patch      # [py3k]
+
+build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 0
+
+requirements:
+  build:
+    - aspell
+    - aspell-en
+    - python
+    - setuptools
+
+  run:
+    - aspell
+    - aspell-en
+    - python
+
+test:
+  # Python imports
+  imports:
+    - aspell
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/WojciechMula/aspell-python
+  license: BSD License
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
