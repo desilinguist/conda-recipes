@@ -1,11 +1,11 @@
 package:
   name: csvkit
-  version: 0.6.1
+  version: 0.7.2
 
 source:
-  fn: csvkit-0.6.1.tar.gz
-  url: https://pypi.python.org/packages/source/c/csvkit/csvkit-0.6.1.tar.gz
-  md5: edc3c078192232263c02f9aa84960673
+  fn: csvkit-0.7.2.tar.gz
+  url: https://pypi.python.org/packages/source/c/csvkit/csvkit-0.7.2.tar.gz
+  md5: f07b8256cee97e9d4f992d94f809e76e
   patches:
    # List any patch files here
     - setup.patch
@@ -33,7 +33,7 @@ build:
 
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 2
+  number: 0
 
 requirements:
   build:
